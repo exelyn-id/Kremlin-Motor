@@ -4,7 +4,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
       {/* Background Gradient */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-black"></div>
+      <div className="absolute inset-0 z-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        {/* Overlay gelap agar teks putih tetap kontras dan mudah dibaca */}
+        <div className="absolute inset-0 bg-zinc-950/80"></div>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
