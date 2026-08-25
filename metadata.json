@@ -1,0 +1,8 @@
+{
+  "name": "Bengkel Kremlin Motor",
+  "description": "Landing page untuk Bengkel Kremlin Motor di Banjarmasin",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
