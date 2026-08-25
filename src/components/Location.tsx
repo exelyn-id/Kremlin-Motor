@@ -18,7 +18,7 @@ export default function Location() {
                 <MapPin className="w-5 h-5 text-zinc-500" />
               </div>
               <div>
-                <p className="text-sm font-bold text-zinc-200">Jl. Veteran No. 45, Banjarmasin</p>
+                <p className="text-sm font-bold text-zinc-200">Jl. Pramuka Depan GG.Delima seberang Dealer Yamaha, kec. Banjarmasin, Kota Banjarmasin</p>
                 <p className="text-xs text-zinc-500 mt-1">Kalimantan Selatan, Indonesia</p>
               </div>
             </div>
