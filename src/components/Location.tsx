@@ -46,10 +46,15 @@ export default function Location() {
 
           {/* Map Column */}
           <div className="w-full h-64 lg:h-full min-h-[300px] bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden relative">
-            <div className="absolute inset-0 bg-[url('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.0293342367295!2d114.62650207370444!3d-3.3429134413300416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de425ffa0de40b1%3A0x8572095cec7cd90a!2sBengkel%20kremlin%20motor!5e0!3m2!1sen!2sid!4v1787654178379!5m2!1sen!2sid')] opacity-30 grayscale contrast-125 bg-cover bg-center"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-500 bg-black/80 px-4 py-2 rounded">Peta Lokasi</span>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.0293342367295!2d114.62650207370444!3d-3.3429134413300416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de425ffa0de40b1%3A0x8572095cec7cd90a!2sBengkel%20kremlin%20motor!5e0!3m2!1sen!2sid!4v1787654178379!5m2!1sen!2sid"
+              className="absolute inset-0 w-full h-full"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Lokasi Bengkel Kremlin Motor"
+            ></iframe>
           </div>
         </div>
       </div>
