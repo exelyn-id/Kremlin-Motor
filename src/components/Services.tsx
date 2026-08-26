@@ -1,4 +1,4 @@
-import { Wrench, Droplet, Zap, Settings } from 'lucide-react';
+import { Wrench, Droplet, Zap, Settings, Cog, PenTool } from 'lucide-react';
 
 const services = [
   {
@@ -25,7 +25,23 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="layanan" className="py-24 bg-zinc-950 relative border-b border-zinc-900">
+    <section id="layanan" className="py-24 bg-zinc-950 relative border-b border-zinc-900 overflow-hidden">
+      
+      {/* ================= STIKER DEKORASI BACKGROUND ================= */}
+      {/* Pola Titik Industrial */}
+      <div className="absolute inset-0 bg-[radial-gradient(#3f3f46_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.05] pointer-events-none"></div>
+      
+      {/* Stiker Gir Kanan Atas */}
+      <div className="absolute -top-20 -right-10 opacity-[0.03] text-white transform rotate-45 pointer-events-none">
+        <Cog size={400} strokeWidth={1} />
+      </div>
+
+      {/* Stiker Alat Kiri Bawah */}
+      <div className="absolute -bottom-24 -left-16 opacity-[0.03] text-white transform -rotate-12 pointer-events-none">
+        <PenTool size={350} strokeWidth={1} />
+      </div>
+      {/* ============================================================== */}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16">
           <span className="text-zinc-600 uppercase text-[10px] tracking-[0.4em] font-black mb-4 block">Layanan Kami</span>
@@ -39,9 +55,9 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="p-6 bg-zinc-900/50 border border-zinc-800 rounded-xl hover:bg-zinc-900 transition-colors"
+              className="p-6 bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-xl hover:bg-zinc-800/80 hover:border-orange-600/50 transition-all duration-300 group"
             >
-              <div className="mb-4">
+              <div className="mb-4 transform group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300">
                 {service.icon}
               </div>
               <h3 className="font-bold text-sm uppercase mb-2 text-white">{service.title}</h3>
