@@ -2,11 +2,14 @@ import { WA_LINK } from '../constants';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 z-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        {/* Overlay gelap agar teks putih tetap kontras dan mudah dibaca */}
-        <div className="absolute inset-0 bg-zinc-950/80"></div>
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-zinc-950">
+      {/* Background Image - Responsif untuk rasio 9:16 */}
+      <div className="absolute inset-0 z-0 w-full h-full">
+        <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-no-repeat bg-cover bg-center md:bg-[length:auto_100%] md:bg-right opacity-40 md:opacity-100"></div>
+        
+        {/* Overlay Gradasi agar teks tetap kontras */}
+        {/* Mobile: Gradasi dari bawah ke atas. Desktop: Gradasi dari kiri ke kanan */}
+        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
